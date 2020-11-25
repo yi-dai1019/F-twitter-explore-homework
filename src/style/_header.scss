@@ -20,9 +20,9 @@
 }
 
 .nav-login {
-  @include btn(transparent, $primary-color, $primary-color);
+  @include btn(100px, transparent, $primary-color, $primary-color);
 }
 
 .nav-register {
-  @include btn($primary-color, $white, $primary-color);
+  @include btn(100px, $primary-color, $white, $primary-color);
 }

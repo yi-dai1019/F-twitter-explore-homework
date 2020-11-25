@@ -1,2 +1,48 @@
+@import "mixins";
+
+main {
+  @include flex-center();
+  flex-grow: 1;
+  .form {
+    width: 30%;
+  }
+}
+
 .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid;
+  border-radius: $border-radius-base;
+  padding: 2% 0;
+}
+
+input {
+  width: 80%;
+  height: 10%;
+  margin-top: 5%;
+  padding-bottom: 3%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $border-color;
+  color: $white;
+}
+
+h2 {
+  color: $white;
+}
+
+a {
+  font-size: 12px;
+  color: $primary-color;
+  margin: 3% 0;
+  width: 80%;
+}
+
+.login {
+  @include btn(80%, transparent, $primary-color, $primary-color);
+}
+
+.register {
+  @include btn(80%, $primary-color, white, $primary-color);
 }

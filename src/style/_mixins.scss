@@ -9,9 +9,9 @@
   align-items: center;
 }
 
-@mixin btn($bg-color, $color, $bordr-color) {
+@mixin btn($width, $bg-color, $color, $bordr-color) {
   @include flex-center();
-  width: 5em;
+  width: $width;
   height: 2.2em;
   border-radius: 1.1em;
   background-color: $bg-color;
