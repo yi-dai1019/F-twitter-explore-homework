@@ -1,0 +1,28 @@
+@import "mixins";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 8%;
+
+  nav {
+    > ul {
+      display: flex;
+      > li {
+        margin-right: 10px;
+        & :last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+.nav-login {
+  @include btn(transparent, $primary-color, $primary-color);
+}
+
+.nav-register {
+  @include btn($primary-color, $white, $primary-color);
+}
